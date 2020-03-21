@@ -5,12 +5,15 @@ const Controller = require('egg').Controller;
 class GetUrlController extends Controller {
   async index() {
     const { ctx } = this;
+    const url = ctx.query.url;
 
-    // 获取url文档内容
-    const result = await ctx.curl(ctx.query.url);
+    // 解析url格式
+    const urlLib = require("url");
+    const urlObj = urlLib.parse(url);
 
-    // 解析内容
+    // 解析网页内容
     const cheerio = require('cheerio');
+    const result = await ctx.curl(url);
     const $ = cheerio.load(result.data);
     
     let links = [];
@@ -20,7 +23,7 @@ class GetUrlController extends Controller {
       if(!link) return;
 
       // 去掉不是超链接的和指向自己的
-      if(link.indexOf('javascript') !== 0 && link !== '/'){
+      if(link.indexOf('javascript') !== 0 && link !== urlObj.pathname){
         links.push({
           'link' : link,
           'text' : $(this).text().trim(),
