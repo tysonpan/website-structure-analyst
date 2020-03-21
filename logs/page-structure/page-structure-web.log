@@ -1,0 +1,421 @@
+2020-03-22 00:15:58,848 ERROR 1235 [-/::1/-/6ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1235
+hostname: TysondeMBP.lan
+
+2020-03-22 00:16:28,231 ERROR 1235 [-/::1/-/675ms GET /getSubUrl?url=www.baidu.com] nodejs.MODULE_NOT_FOUNDError: Cannot find module 'cheerio'
+Require stack:
+- /Users/tysonpan/Documents/egg-example/app/controller/getUrl.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-core/lib/utils/index.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-core/lib/egg.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-core/index.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg/lib/application.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg/index.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-cluster/lib/app_worker.js
+Require stack:
+- /Users/tysonpan/Documents/egg-example/app/controller/getUrl.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-core/lib/utils/index.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-core/lib/egg.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-core/index.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg/lib/application.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg/index.js
+- /Users/tysonpan/Documents/egg-example/node_modules/egg-cluster/lib/app_worker.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:981:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:863:27)
+    at Module.require (internal/modules/cjs/loader.js:1043:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at GetUrlController.index (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:13:21)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/tysonpan/Documents/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+code: "MODULE_NOT_FOUND"
+requireStack: ["/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js","/Users/tysonpan/Documents/egg-example/node_modules/egg-core/lib/utils/index.js","/Users/tysonpan/Documents/egg-example/node_modules/egg-core/lib/egg.js","/Users/tysonpan/Documents/egg-example/node_modules/egg-core/index.js","/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/application.js","/Users/tysonpan/Documents/egg-example/node_modules/egg/index.js","/Users/tysonpan/Documents/egg-example/node_modules/egg-cluster/lib/app_worker.js"]
+name: "MODULE_NOT_FOUNDError"
+pid: 1235
+hostname: TysondeMBP.lan
+
+2020-03-22 00:20:35,862 ERROR 1303 [-/::1/-/2ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1303
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:11,884 ERROR 1310 [-/::1/-/6ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1310
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:12,879 ERROR 1310 [-/::1/-/0ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1310
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:13,155 ERROR 1310 [-/::1/-/0ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1310
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:13,499 ERROR 1310 [-/::1/-/1ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1310
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:44,161 ERROR 1317 [-/::1/-/6ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:44,458 ERROR 1317 [-/::1/-/0ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:44,658 ERROR 1317 [-/::1/-/1ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:44,837 ERROR 1317 [-/::1/-/1ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:45,041 ERROR 1317 [-/::1/-/1ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:21:45,536 ERROR 1317 [-/::1/-/1ms GET /getSubUrl] nodejs.Error: expect request url to be a string or a http request options, but got undefined
+    at Object.requestWithCallback (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:202:11)
+    at /Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:160:13
+    at new Promise (<anonymous>)
+    at Object.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:159:10)
+    at HttpClient.request.HttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient.js:45:17)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/httpclient2.js:28:39)
+    at HttpClient.request (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/httpclient.js:45:18)
+    at Application.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/egg.js:283:28)
+    at ContextHttpClient.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/lib/core/context_httpclient.js:20:21)
+    at Object.curl (/Users/tysonpan/Documents/egg-example/node_modules/egg/app/extend/context.js:48:28)
+
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:22:01,470 ERROR 1317 [-/::1/-/7ms GET /getSubUrl?url=11] nodejs.ResponseError: connect EHOSTUNREACH 0.0.0.11:80 - Local (10.1.1.154:58867), GET http://11 -1 (connected: true, keepalive socket: true, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"0.0.0.11:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+    at internalConnect (net.js:917:16)
+    at defaultTriggerAsyncIdScope (internal/async_hooks.js:311:12)
+    at net.js:1007:9
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)
+errno: "EHOSTUNREACH"
+code: "EHOSTUNREACH"
+syscall: "connect"
+address: "0.0.0.11"
+port: 80
+name: "ResponseError"
+data: undefined
+path: "/"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":6,"keepAliveSocket":true,"requestUrls":["http://0.0.0.11/"],"timing":null,"socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1317
+hostname: TysondeMBP.lan
+
+2020-03-22 00:25:19,447 ERROR 1342 [-/::1/-/252ms GET /getSubUrl?url=http://www.baidu.com] nodejs.TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Node'
+    |     property 'children' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 'Node'
+    --- property 'parent' closes the circle
+    --> starting at object with constructor 'Node'
+    |     property 'children' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 'Node'
+    --- property 'parent' closes the circle
+    at JSON.stringify (<anonymous>)
+    at respond (/Users/tysonpan/Documents/egg-example/node_modules/koa/lib/application.js:259:15)
+    at handleResponse (/Users/tysonpan/Documents/egg-example/node_modules/koa/lib/application.js:164:34)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+
+pid: 1342
+hostname: TysondeMBP.lan
+
+2020-03-22 01:00:03,936 ERROR 1656 [-/::1/-/502ms GET /getSubUrl?url=http://www.baidu.com] nodejs.TypeError: $(...).conetnts is not a function
+    at Node.<anonymous> (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:22:28)
+    at initialize.exports.each (/Users/tysonpan/Documents/egg-example/node_modules/cheerio/lib/api/traversing.js:300:24)
+    at GetUrlController.index (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:18:12)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/tysonpan/Documents/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/tysonpan/Documents/egg-example/node_modules/koa-session/index.js:41:7)
+
+pid: 1656
+hostname: TysondeMBP.lan
+
+2020-03-22 01:00:29,058 ERROR 1660 [-/::1/-/297ms GET /getSubUrl?url=http://www.baidu.com] nodejs.TypeError: $(...).conetnts is not a function
+    at Node.<anonymous> (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:22:28)
+    at initialize.exports.each (/Users/tysonpan/Documents/egg-example/node_modules/cheerio/lib/api/traversing.js:300:24)
+    at GetUrlController.index (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:18:12)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/tysonpan/Documents/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/tysonpan/Documents/egg-example/node_modules/koa-session/index.js:41:7)
+
+pid: 1660
+hostname: TysondeMBP.lan
+
+2020-03-22 01:00:40,504 ERROR 1660 [-/::1/-/259ms GET /getSubUrl?url=http://www.baidu.com] nodejs.TypeError: $(...).conetnts is not a function
+    at Node.<anonymous> (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:22:28)
+    at initialize.exports.each (/Users/tysonpan/Documents/egg-example/node_modules/cheerio/lib/api/traversing.js:300:24)
+    at GetUrlController.index (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:18:12)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/tysonpan/Documents/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/tysonpan/Documents/egg-example/node_modules/koa-session/index.js:41:7)
+
+pid: 1660
+hostname: TysondeMBP.lan
+
+2020-03-22 01:04:13,760 ERROR 1667 [-/::1/-/295ms GET /getSubUrl?url=https://developer.huawei.com/cn/] nodejs.TypeError: Cannot read property 'indexOf' of undefined
+    at Node.<anonymous> (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:27:15)
+    at initialize.exports.each (/Users/tysonpan/Documents/egg-example/node_modules/cheerio/lib/api/traversing.js:300:24)
+    at GetUrlController.index (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:18:12)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/tysonpan/Documents/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/tysonpan/Documents/egg-example/node_modules/koa-session/index.js:41:7)
+
+pid: 1667
+hostname: TysondeMBP.lan
+
+2020-03-22 01:04:24,997 ERROR 1667 [-/::1/-/110ms GET /getSubUrl?url=https://developer.huawei.com/cn/] nodejs.TypeError: Cannot read property 'indexOf' of undefined
+    at Node.<anonymous> (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:27:15)
+    at initialize.exports.each (/Users/tysonpan/Documents/egg-example/node_modules/cheerio/lib/api/traversing.js:300:24)
+    at GetUrlController.index (/Users/tysonpan/Documents/egg-example/app/controller/getUrl.js:18:12)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /Users/tysonpan/Documents/egg-example/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/tysonpan/Documents/egg-example/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/tysonpan/Documents/egg-example/node_modules/koa-session/index.js:41:7)
+
+pid: 1667
+hostname: TysondeMBP.lan
+
+2020-03-22 01:09:47,597 ERROR 1725 [-/::1/-/5007ms GET /getSubUrl?url=https://developer.google.com/] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://developer.google.com/ -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":1,"requestCount":1,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:926:15)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ConnectionTimeoutError"
+requestId: 2
+data: undefined
+path: "/"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5005,"keepAliveSocket":false,"requestUrls":["https://developer.google.com/"],"timing":null,"remoteAddress":"216.58.200.238","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1725
+hostname: TysondeMBP.lan
+
+2020-03-22 01:10:04,271 ERROR 1725 [-/::1/-/5008ms GET /getSubUrl?url=https://developer.google.com/] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://developer.google.com/ -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":3,"createSocketErrorCount":0,"closeSocketCount":3,"errorSocketCount":0,"timeoutSocketCount":1,"requestCount":1,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:926:15)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ConnectionTimeoutError"
+requestId: 3
+data: undefined
+path: "/"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5007,"keepAliveSocket":false,"requestUrls":["https://developer.google.com/"],"timing":null,"remoteAddress":"216.58.200.238","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1725
+hostname: TysondeMBP.lan
+
+2020-03-22 01:11:42,025 ERROR 1755 [-/::1/-/10029ms GET /getSubUrl?url=https://developer.google.com/] nodejs.ConnectionTimeoutError: Connect timeout for 10000ms, GET https://developer.google.com/ -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:926:15)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":10022,"keepAliveSocket":false,"requestUrls":["https://developer.google.com/"],"timing":null,"remoteAddress":"216.58.200.238","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1755
+hostname: TysondeMBP.lan
+
+2020-03-22 01:11:57,926 ERROR 1755 [-/::1/-/10004ms GET /getSubUrl?url=https://developer.google.com/] nodejs.ConnectionTimeoutError: Connect timeout for 10000ms, GET https://developer.google.com/ -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:926:15)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ConnectionTimeoutError"
+requestId: 2
+data: undefined
+path: "/"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":10003,"keepAliveSocket":false,"requestUrls":["https://developer.google.com/"],"timing":null,"remoteAddress":"216.58.200.238","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1755
+hostname: TysondeMBP.lan
+
+2020-03-22 01:12:18,357 ERROR 1755 [-/::1/-/10005ms GET /getSubUrl?url=https://developer.google.com/] nodejs.ConnectionTimeoutError: Connect timeout for 10000ms, GET https://developer.google.com/ -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":3,"createSocketErrorCount":0,"closeSocketCount":3,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:926:15)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ConnectionTimeoutError"
+requestId: 3
+data: undefined
+path: "/"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":10005,"keepAliveSocket":false,"requestUrls":["https://developer.google.com/"],"timing":null,"remoteAddress":"216.58.200.238","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1755
+hostname: TysondeMBP.lan
+
+2020-03-22 01:13:18,226 ERROR 1787 [-/::1/-/5026ms GET /getSubUrl?url=https://developer.google.com/] nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://developer.google.com/ -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/Users/tysonpan/Documents/egg-example/node_modules/urllib/lib/urllib.js:926:15)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5018,"keepAliveSocket":false,"requestUrls":["https://developer.google.com/"],"timing":null,"remoteAddress":"216.58.200.238","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 1787
+hostname: TysondeMBP.lan
+

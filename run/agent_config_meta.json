@@ -1,0 +1,294 @@
+{
+  "keys": "/Users/tysonpan/Documents/egg-example/config/config.default.js",
+  "middleware": "/Users/tysonpan/Documents/egg-example/config/config.default.js",
+  "session": {
+    "maxAge": "/Users/tysonpan/Documents/egg-example/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/tysonpan/Documents/egg-example/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/tysonpan/Documents/egg-example/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/tysonpan/Documents/egg-example/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/tysonpan/Documents/egg-example/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/tysonpan/Documents/egg-example/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/tysonpan/Documents/egg-example/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/tysonpan/Documents/egg-example/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/tysonpan/Documents/egg-example/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/tysonpan/Documents/egg-example/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/tysonpan/Documents/egg-example/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/tysonpan/Documents/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/tysonpan/Documents/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/tysonpan/Documents/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/tysonpan/Documents/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/tysonpan/Documents/egg-example/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/tysonpan/Documents/egg-example/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/tysonpan/Documents/egg-example/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/tysonpan/Documents/egg-example/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/tysonpan/Documents/egg-example/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/tysonpan/Documents/egg-example/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/tysonpan/Documents/egg-example/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/tysonpan/Documents/egg-example/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/tysonpan/Documents/egg-example/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/tysonpan/Documents/egg-example/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/tysonpan/Documents/egg-example/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/tysonpan/Documents/egg-example/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/tysonpan/Documents/egg-example/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/tysonpan/Documents/egg-example/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/tysonpan/Documents/egg-example/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/tysonpan/Documents/egg-example/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/tysonpan/Documents/egg-example/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/tysonpan/Documents/egg-example/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/tysonpan/Documents/egg-example/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/tysonpan/Documents/egg-example/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/tysonpan/Documents/egg-example/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/tysonpan/Documents/egg-example/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/tysonpan/Documents/egg-example/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/tysonpan/Documents/egg-example/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/tysonpan/Documents/egg-example/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/tysonpan/Documents/egg-example/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "name": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "version": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "description": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "private": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "cheerio": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "egg": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "stop": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "dev": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "debug": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "test": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "cov": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "lint": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "ci": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "autod": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "url": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "license": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "strict": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "depth": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "env": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "level": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "logging": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "port": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/tysonpan/Documents/egg-example/node_modules/egg/config/config.default.js"
+}

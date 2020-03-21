@@ -1,0 +1,45 @@
+2020-03-15 23:08:34,708 INFO 40153 [egg:logger] init all loggers with options: {"dir":"/Users/tysonpan/Documents/egg-example/logs/page-structure","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"page-structure-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-15 23:08:34,727 INFO 40153 [egg-multipart] stream mode enable
+2020-03-15 23:08:34,759 INFO 40153 [egg-static] starting static serve /public/ -> /Users/tysonpan/Documents/egg-example/app/public
+2020-03-15 23:08:34,761 INFO 40153 [egg-security] use csrf middleware
+2020-03-15 23:08:34,762 INFO 40153 [egg-security] use methodnoallow middleware
+2020-03-15 23:08:34,762 INFO 40153 [egg-security] use noopen middleware
+2020-03-15 23:08:34,762 INFO 40153 [egg-security] use nosniff middleware
+2020-03-15 23:08:34,763 INFO 40153 [egg-security] use xssProtection middleware
+2020-03-15 23:08:34,763 INFO 40153 [egg-security] use xframe middleware
+2020-03-15 23:08:34,763 INFO 40153 [egg-security] use dta middleware
+2020-03-15 23:08:34,763 INFO 40153 [egg-security] compose 7 middlewares into one security middleware
+2020-03-15 23:08:34,770 INFO 40153 [egg:core] dump config after load, 3ms
+2020-03-15 23:08:34,782 INFO 40153 [egg-watcher:application] watcher start success
+2020-03-15 23:08:34,788 INFO 40153 [egg:core] dump config after ready, 4ms
+2020-03-15 23:10:23,480 INFO 40194 [egg:logger] init all loggers with options: {"dir":"/Users/tysonpan/Documents/egg-example/logs/page-structure","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"page-structure-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-15 23:10:23,500 INFO 40194 [egg-multipart] stream mode enable
+2020-03-15 23:10:23,537 INFO 40194 [egg-static] starting static serve /public/ -> /Users/tysonpan/Documents/egg-example/app/public
+2020-03-15 23:10:23,538 INFO 40194 [egg-security] use csrf middleware
+2020-03-15 23:10:23,539 INFO 40194 [egg-security] use methodnoallow middleware
+2020-03-15 23:10:23,539 INFO 40194 [egg-security] use noopen middleware
+2020-03-15 23:10:23,540 INFO 40194 [egg-security] use nosniff middleware
+2020-03-15 23:10:23,540 INFO 40194 [egg-security] use xssProtection middleware
+2020-03-15 23:10:23,540 INFO 40194 [egg-security] use xframe middleware
+2020-03-15 23:10:23,541 INFO 40194 [egg-security] use dta middleware
+2020-03-15 23:10:23,541 INFO 40194 [egg-security] compose 7 middlewares into one security middleware
+2020-03-15 23:10:23,547 INFO 40194 [egg:core] dump config after load, 4ms
+2020-03-15 23:10:23,557 INFO 40194 [egg-watcher:application] watcher start success
+2020-03-15 23:10:23,563 INFO 40194 [egg:core] dump config after ready, 4ms
+2020-03-15 23:12:44,782 INFO 40320 [egg:logger] init all loggers with options: {"dir":"/Users/tysonpan/Documents/egg-example/logs/page-structure","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"page-structure-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-03-15 23:12:44,799 INFO 40320 [egg-multipart] stream mode enable
+2020-03-15 23:12:44,826 INFO 40320 [egg-static] starting static serve /public/ -> /Users/tysonpan/Documents/egg-example/app/public
+2020-03-15 23:12:44,828 INFO 40320 [egg-security] use csrf middleware
+2020-03-15 23:12:44,828 INFO 40320 [egg-security] use methodnoallow middleware
+2020-03-15 23:12:44,828 INFO 40320 [egg-security] use noopen middleware
+2020-03-15 23:12:44,829 INFO 40320 [egg-security] use nosniff middleware
+2020-03-15 23:12:44,829 INFO 40320 [egg-security] use xssProtection middleware
+2020-03-15 23:12:44,829 INFO 40320 [egg-security] use xframe middleware
+2020-03-15 23:12:44,829 INFO 40320 [egg-security] use dta middleware
+2020-03-15 23:12:44,829 INFO 40320 [egg-security] compose 7 middlewares into one security middleware
+2020-03-15 23:12:44,835 INFO 40320 [egg:core] dump config after load, 3ms
+2020-03-15 23:12:44,842 INFO 40320 [egg-watcher:application] watcher start success
+2020-03-15 23:12:44,848 INFO 40320 [egg:core] dump config after ready, 4ms
+2020-03-15 23:59:59,981 INFO 40320 [egg-logrotator] clean all log before 31 days
+2020-03-16 00:00:00,971 INFO 40320 [egg-logrotator] broadcast log-reload
+2020-03-16 00:00:00,971 INFO 40320 [egg-logrotator] rotate files success by DayRotator, files ["/Users/tysonpan/Documents/egg-example/logs/page-structure/common-error.log -> /Users/tysonpan/Documents/egg-example/logs/page-structure/common-error.log.2020-03-15","/Users/tysonpan/Documents/egg-example/logs/page-structure/page-structure-web.log -> /Users/tysonpan/Documents/egg-example/logs/page-structure/page-structure-web.log.2020-03-15","/Users/tysonpan/Documents/egg-example/logs/page-structure/egg-web.log -> /Users/tysonpan/Documents/egg-example/logs/page-structure/egg-web.log.2020-03-15","/Users/tysonpan/Documents/egg-example/logs/page-structure/egg-schedule.log -> /Users/tysonpan/Documents/egg-example/logs/page-structure/egg-schedule.log.2020-03-15","/Users/tysonpan/Documents/egg-example/logs/page-structure/egg-agent.log -> /Users/tysonpan/Documents/egg-example/logs/page-structure/egg-agent.log.2020-03-15"]
