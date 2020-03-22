@@ -1,84 +1,140 @@
 <!DOCTYPE html>
 <html style="height: 100%">
    <head>
+        <!-- 通过标签方式直接引入构建好的 echarts 文件 -->
        <meta charset="utf-8">
-   </head>
-   <body style="height: 100%; margin: 0">
-       <div id="container" style="height: 100%"></div>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
-       
+     
+   </head>
+   <body style="height: 100%; margin: 0">
+     <!-- 为在绘图前我们需要为 ECharts 准备一个具备高宽的 DOM 容器。 -->
+       <div id="container" style="height: 100%"></div>
        <script type="text/javascript">
-var dom = document.getElementById("container");
-var myChart = echarts.init(dom);
-var app = {};
-option = null;
-myChart.showLoading();
-$.get('./les-miserables.gexf', function (xml) {
-    myChart.hideLoading();
 
+// 创建 echarts 实例。
+ // 为什么5min上手的案例里没有这句话？
+ //什么是Dom？DOM 节点（作为 echarts 的渲染容器），就可以在上面创建一个 echarts 实例。每个 echarts 实例独占一个 DOM 节点。
+var dom = document.getElementById("container");
+ // 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(dom);
+ // 这个app是什么？
+var app = {};
+// 这个option是什么？一个网页中可以创建多个 echarts 实例。每个 echarts 实例 中可以创建多个图表和坐标系等等（用 option 来描述）
+option = null;
+
+//显示等待加载时候的圈圈
+myChart.showLoading();
+//这是什么语法？
+$.get('./les-miserables.gexf', function (xml) {
+    myChart.hideLoading();//读数据的时候就隐藏圈圈？还没加载完吧
+
+    //这是什么？哪里有文档？
     var graph = echarts.dataTool.gexf.parse(xml);
+
+    //用数组的方式新建类目
     var categories = [];
     for (var i = 0; i < 9; i++) {
         categories[i] = {
             name: '类目' + i
         };
     }
+
+    //node同data，是data的别名，为关系图的节点数据列表。
+    //这个语法是什么语法？
     graph.nodes.forEach(function (node) {
+        //该节点的样式。color , borderColor , borderWidth , borderType , shadowBlur , shadowColor , shadowOffsetX , shadowOffsetY , opacity 
         node.itemStyle = null;
+        //series-graph.data. value（number，Array）数据项值。
+        //此处数据项值等于原始大小
         node.value = node.symbolSize;
+        //该类目节点标记的大小，可以设置成诸如 10 这样单一的数字，也可以用数组分开表示宽和高，例如 [20, 10] 表示标记宽为20，高为10。
+        //把大小缩小？为什么要这么做？
         node.symbolSize /= 1.5;
+        //该节点标签的样式。
         node.label = {
+            //boolean：是否显示标签。如果的大小在30以上的则显示标签
             show: node.symbolSize > 30
         };
+        //数据项所在类目的 index。这是什么？
         node.category = node.attributes.modularity_class;
     });
+    //echarts 的使用者，使用 option 来描述其对图表的各种需求，包括：有什么数据、要画什么图表、图表长什么样子、含有什么组件、组件能操作什么事情等等。
+    //option 表述了：数据、数据如何映射成图形、交互行为。
+    // option 是个大的 JavaScript 对象。
     option = {
+         // option 每个属性是一类组件。
         title: {
             text: 'Les Miserables',
             subtext: 'Default layout',
             top: 'bottom',
             left: 'right'
         },
+
+         // option 每个属性是一类组件。本系列特定的 tooltip 设定。
         tooltip: {},
+
+         // option 每个属性是一类组件。
         legend: [{
             // selectedMode: 'single',
             data: categories.map(function (a) {
                 return a.name;
             })
         }],
+
+         // option 每个属性是一类组件。
+         //初始动画的时长，支持回调函数，可以通过每个数据返回不同的时长实现更戏剧的初始动画效果：
         animationDuration: 1500,
+        //数据更新动画的缓动效果。
         animationEasingUpdate: 'quinticInOut',
+
+         // option 每个属性是一类组件。系列Series是专门绘制“图”的组件。
+         //系列（series）是指：一组数值以及他们映射成的图。
+         //因为系列是一种特殊的组件，所以有时候也会出现 “组件和系列” 这样的描述，这种语境下的 “组件” 是指：除了 “系列” 以外的其他组件。
         series : [
             {
-                name: 'Les Miserables',
-                type: 'graph',
-                layout: 'none',
-                data: graph.nodes,
-                links: graph.links,
-                categories: categories,
-                roam: true,
-                focusNodeAdjacency: true,
+                name: 'Les Miserables',//系列名称，用于tooltip的显示，legend 的图例筛选，在 setOption 更新数据和配置项时用于指定对应的系列。
+                type: 'graph',//图表类型
+                layout: 'none',//图的布局。
+                //'none' 不采用任何布局，使用节点中提供的 x， y 作为节点的位置。
+                //'circular' 采用环形布局，见示例 Les Miserables，布局相关的配置项见 graph.circular
+                //'force' 采用力引导布局，见示例 Force，布局相关的配置项见 graph.force
+                data: graph.nodes,//关系图的节点数据列表。节点的name不能重复。
+                links: graph.links,//节点间的关系数据。
+                categories: categories,//节点分类的类目，可选。
+                //如果节点有分类的话可以通过 data[i].category 指定每个节点的类目，类目的样式会被应用到节点样式上。图例也可以基于categories名字展现和筛选
+                roam: true,//是否开启鼠标缩放和平移漫游。默认不开启。如果只想要开启缩放或者平移，可以设置成 'scale' 或者 'move'。设置成 true 为都开启
+                focusNodeAdjacency: true,//是否在鼠标移到节点上的时候突出显示节点以及节点的边和邻接节点。
+                //图形样式。
                 itemStyle: {
-                    borderColor: '#fff',
-                    borderWidth: 1,
-                    shadowBlur: 10,
-                    shadowColor: 'rgba(0, 0, 0, 0.3)'
+                    //series-graph.itemStyle. color = 自适应。图形的颜色。 默认从全局调色盘 option.color 获取颜色
+                    borderColor: '#fff',//图形的描边颜色。支持的颜色格式同 color，不支持回调函数。什么叫回调函数？
+                    borderWidth: 1,//描边线宽。为 0 时无描边。
+                    shadowBlur: 10,//图形阴影的模糊大小。该属性配合 shadowColor,shadowOffsetX, shadowOffsetY 一起设置图形的阴影效果。
+                    shadowColor: 'rgba(0, 0, 0, 0.3)'//阴影颜色。支持的格式同color。
                 },
+                //图形上的文本标签，可用于说明图形的一些数据信息
                 label: {
-                    position: 'right',
+                    position: 'right',//位置。
+                    /*标签内容格式器，支持字符串模板和回调函数两种形式，字符串模板与回调函数返回的字符串均支持用 \n 换行。
+                    字符串模板 模板变量有：
+                    {a}：系列名。
+                    {b}：数据名。
+                    {c}：数据值。
+                    {@xxx}：数据中名为'xxx'的维度的值，如{@product}表示名为'product'` 的维度的值。
+                    {@[n]}：数据中维度n的值，如{@[3]}` 表示维度 3 的值，从 0 开始计数。*/
                     formatter: '{b}'
                 },
+                //关系边的公用线条样式。其中 lineStyle.color 支持设置为'source'或者'target'特殊值，此时边会自动取源节点或目标节点的颜色作为自己的颜色。
                 lineStyle: {
-                    color: 'source',
-                    curveness: 0.3
+                    color: 'source',//线的颜色。
+                    curveness: 0.3//边的曲度，支持从 0 到 1 的值，值越大曲度越大。
                 },
+                //高亮的图形样式。
                 emphasis: {
                     lineStyle: {
                         width: 10
@@ -87,9 +143,10 @@ $.get('./les-miserables.gexf', function (xml) {
             }
         ]
     };
-
+// 使用刚指定的配置项和数据显示图表
     myChart.setOption(option);
 }, 'xml');;
+//这个什么意思？
 if (option && typeof option === "object") {
     myChart.setOption(option, true);
 }
